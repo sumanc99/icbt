@@ -1,6 +1,30 @@
-{% extends 'base.html'%}
+{% extends 'base.html' %}
 
 
 {% block content %}
-    <h1>hello suman step one done</h1>
+<section class="bg-white py-20">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+        Instant Offline Testing Solution
+      </h1>
+      <p class="mt-6 text-lg  max-w-2xl mx-auto">
+        Conduct secure, computer-based tests without internet. Built for classrooms using students’ own devices.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+        <a href="{{ url_for('main.dashboard') }}" class="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg shadow hover:bg-blue-700 transition">
+          Get Started
+        </a>
+   
+      </div>
+
+    
+    </div>
+</section>
+
+  
+
+
+
+
+
 {% endblock %}

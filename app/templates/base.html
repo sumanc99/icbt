@@ -3,21 +3,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- important for responsiveness -->
     <!-- {{ title }} | My Flask App -->
     <title>
           test
     </title>
-    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
-<body>
-    <header>
-        <h1>My Flask App</h1>
-        <nav>
-            <!-- <a href="{{ url_for('main.index') }}">Home</a> -->
-        </nav>
-    </header>
+
+<body class="bg-white text-blue-900 font-sans">
     <main>
         {% block content %}{% endblock %}
     </main>
+
+
+  <!-- Footer -->
+  <footer class="bg-white-100 py-6 text-center text-blue-700 text-sm">
+    &copy; 2025 InstantTest. All rights reserved.
+  </footer>
 </body>
 </html>
